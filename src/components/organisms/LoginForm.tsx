@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FormField } from "../molecules/FormField";
 import { Checkbox } from "../atoms/Checkbox";
 import { RadioGroup } from "../molecules/RadioGroup";
-import { Button } from "../molecules/Button";
+import { Button } from "../atoms/Button";
 import { ErrorText, Heading } from "../atoms/Typography";
 import { login } from "../../services/api";
 import { setToken } from "../../services/auth";
