@@ -28,6 +28,9 @@ export const globalStyles = `
   main {
     display: flex;
     flex-direction: column;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 2rem;
   }
 `;
 

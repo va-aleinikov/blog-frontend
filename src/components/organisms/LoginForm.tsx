@@ -38,12 +38,14 @@ export const LoginForm: React.FC = () => {
           name="email"
           type="email"
           value={email}
+          placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
         />
         <FormField
           name="password"
           type="password"
           value={password}
+          placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
         />
         <label>
