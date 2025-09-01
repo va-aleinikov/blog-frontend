@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { FormField } from "../molecules/FormField";
-import { Checkbox } from "../atoms/Checkbox";
+import { Checkbox } from "../atoms/Checkbox/Checkbox";
 import { RadioGroup } from "../molecules/RadioGroup";
-import { Button } from "../atoms/Button";
+import { Button } from "../atoms/Button/Button";
 import { ErrorText, Heading } from "../atoms/Typography";
 import { login } from "../../services/api";
 import { setToken } from "../../services/auth";
@@ -48,14 +48,11 @@ export const LoginForm: React.FC = () => {
           placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <label>
-          <Checkbox
-            checked={policy}
-            onChange={(e) => setPolicy(e.target.checked)}
-          />
-          policy
-        </label>
-        <RadioGroup
+        <Checkbox
+          checked={policy}
+          onChange={(e) => setPolicy(e.target.checked)}
+        />
+        {/* <RadioGroup
           name="radio"
           options={[
             { label: "да", value: "да" },
@@ -64,7 +61,7 @@ export const LoginForm: React.FC = () => {
           ]}
           selected={radio}
           onChange={(e) => setRadio(e.target.value)}
-        />
+        /> */}
         <Button type="submit" disabled={!policy}>
           Log In
         </Button>

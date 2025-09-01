@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button } from "../atoms/Button";
+import { Button } from "../atoms/Button/Button";
 import { clearToken, getToken } from "../../services/auth";
 import { useNavigate } from "react-router-dom";
 

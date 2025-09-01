@@ -1,0 +1,65 @@
+/* src/styles/global.css */
+
+/* === Дизайн-токены === */
+:root {
+  /* Основные цвета */
+  --color-primary: #007bff;
+  --color-secondary: #6c757d;
+  --color-success: #28a745;
+  --color-danger: #dc3545;
+  --color-warning: #ffc107;
+  --color-info: #17a2b8;
+  --color-light: #f8f9fa;
+  --color-dark: #343a40;
+
+  /* Функциональные цвета */
+  --color-background: #f9f9f9;
+  --color-text: #fff;
+  --color-error: #dc3545;
+  --color-border: #dee2e6;
+
+  /* Отступы */
+  --spacing-xs: 0.75rem;
+  --spacing-sm: 1rem;
+  /* --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 4rem; */
+
+  /* Радиусы */
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* Типографика */
+  --font-family: "Inter", sans-serif;
+  --font-size-sm: 0.75rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 2rem;
+  --font-size-xl: 3rem;
+  /* --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700; */
+}
+
+/* === Глобальные стили === */
+body {
+  font-family: var(--font-family);
+  background: var(--color-light);
+  max-width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+input,
+button {
+  padding: var(--spacing-xs);
+  font-size: var(--font-size-base);
+}

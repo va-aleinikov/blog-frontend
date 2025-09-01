@@ -1,10 +1,4 @@
 import React from "react";
 import { AppRouter } from "./routes/AppRouter";
-import { globalStyles } from "./styles/global";
-
-export const App: React.FC = () => (
-  <>
-    <style>{globalStyles}</style>
-    <AppRouter />
-  </>
-);
+import "./styles/global.css";
+export const App: React.FC = () => <AppRouter />;

@@ -1,0 +1,26 @@
+/* src/components/atoms/Button.css */
+
+.btn {
+  padding: var(--spacing-xs);
+  font-size: var(--font-size-base);
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* варианты кнопок */
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.btn--danger {
+  background-color: var(--color-danger);
+  color: var(--color-text);
+}
