@@ -1,0 +1,4 @@
+.error-text {
+  color: var(--color-danger);
+  margin-top: var(--spacing-sm);
+}

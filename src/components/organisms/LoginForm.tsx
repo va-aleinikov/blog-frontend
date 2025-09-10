@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { FormField } from "../molecules/FormField";
 import { Checkbox } from "../atoms/Checkbox/Checkbox";
-import { RadioGroup } from "../molecules/RadioGroup";
 import { Button } from "../atoms/Button/Button";
-import { ErrorText, Heading } from "../atoms/Typography";
+import { Heading } from "../atoms/Heading/Heading";
+import { ErrorText } from "../atoms/ErrorText/ErrorText";
 import { login } from "../../services/api";
 import { setToken } from "../../services/auth";
 import { useNavigate } from "react-router-dom";
